@@ -56,7 +56,6 @@ class EWallet(object):
         EWallet_Operator.send_message(self.ser, data)
 
 
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     MainWindow = QMainWindow()

@@ -10,7 +10,6 @@ def scan_COM():
     i = 1
     while i < 100:
         name = 'COM' + str(i)
-        #ser.open
         try:
             ser.is_open
             ser = serial.Serial(name)
