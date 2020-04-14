@@ -1,4 +1,6 @@
 import serial
+import time
+import SignalandSlot
 
 ButeRate_list = ["1200", "2400", "4800", "9600", "14400", "19200", "38400",
                                               "56000", "576000", "115200"]
@@ -34,3 +36,13 @@ def send_message(ser, message):
         ser.write(message.encode('utf-8'))
     except Exception as e:
         print(e)
+
+
+def recv_message(ser, signals, parent):
+    while parent.exit:
+        _exit = parent.exit
+        data = ser.read_all()
+        if data != b'':
+            signals.Recv_signal.emit(data.decode('utf-8'), parent.ui)
+        time.sleep(1)
+
