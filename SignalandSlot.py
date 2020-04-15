@@ -9,6 +9,10 @@ class Signals(QObject):
 
     Recv_signal = pyqtSignal(str, Ui_MainWindow)
 
+    Serached_Card_signal = pyqtSignal(str, Ui_MainWindow)
+
+    Read_kuai_signal = pyqtSignal(str, Ui_MainWindow)
+
     def __init__(self):
         super(Signals, self).__init__()
 
@@ -25,3 +29,9 @@ class Slots(QObject):
 
     def Recv_slot(self, data, ui):
         ui.Text.append(data)
+
+    def Serached_Card_slot(self, message, ui):
+        ui.SerachedCard_TextEdit.setText(message)
+
+    def Read_kuai_slot(self, message, ui):
+        ui.Read_TextEdit.setText(message)

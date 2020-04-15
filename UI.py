@@ -125,6 +125,7 @@ class Ui_MainWindow(object):
         font.setFamily("Arial")
         font.setPointSize(11)
         self.PasswordA_TextEdit.setFont(font)
+        self.PasswordA_TextEdit.setReadOnly(True)
         self.PasswordA_TextEdit.setObjectName("PasswordA_TextEdit")
         self.PasswordB_TextEdit = QtWidgets.QTextEdit(self.widget_3)
         self.PasswordB_TextEdit.setGeometry(QtCore.QRect(130, 100, 231, 31))
@@ -132,6 +133,7 @@ class Ui_MainWindow(object):
         font.setFamily("Arial")
         font.setPointSize(11)
         self.PasswordB_TextEdit.setFont(font)
+        self.PasswordB_TextEdit.setReadOnly(True)
         self.PasswordB_TextEdit.setObjectName("PasswordB_TextEdit")
         self.PasswordA_PushButton = QtWidgets.QPushButton(self.widget_3)
         self.PasswordA_PushButton.setGeometry(QtCore.QRect(20, 62, 91, 31))
@@ -215,13 +217,13 @@ class Ui_MainWindow(object):
         font.setPointSize(12)
         self.RechargeAccept_PushButton.setFont(font)
         self.RechargeAccept_PushButton.setObjectName("RechargeAccept_PushButton")
-        self.BalanceRequest_TextEdit = QtWidgets.QPushButton(self.widget_5)
-        self.BalanceRequest_TextEdit.setGeometry(QtCore.QRect(300, 120, 61, 31))
+        self.BalanceRequest_PushButton = QtWidgets.QPushButton(self.widget_5)
+        self.BalanceRequest_PushButton.setGeometry(QtCore.QRect(300, 120, 61, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(12)
-        self.BalanceRequest_TextEdit.setFont(font)
-        self.BalanceRequest_TextEdit.setObjectName("BalanceRequest_TextEdit")
+        self.BalanceRequest_PushButton.setFont(font)
+        self.BalanceRequest_PushButton.setObjectName("BalanceRequest_PushButton")
         self.DeductionAccept_PushButton = QtWidgets.QPushButton(self.widget_5)
         self.DeductionAccept_PushButton.setGeometry(QtCore.QRect(300, 80, 61, 31))
         font = QtGui.QFont()
@@ -293,6 +295,16 @@ class Ui_MainWindow(object):
         self.Choose_PushButton.setText(_translate("MainWindow", " 选择"))
         self.label_3.setText(_translate("MainWindow", "认证操作"))
         self.label_6.setText(_translate("MainWindow", "块地址"))
+        self.PasswordA_TextEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Arial\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'等线\'; font-size:10.5pt;\">FFFFFFFFFFFF</span></p></body></html>"))
+        self.PasswordB_TextEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Arial\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'等线\'; font-size:10.5pt;\">FFFFFFFFFFFF</span></p></body></html>"))
         self.PasswordA_PushButton.setText(_translate("MainWindow", "认证密钥A"))
         self.PasswordB_PushButton.setText(_translate("MainWindow", "认证密钥B"))
         self.label_7.setText(_translate("MainWindow", "读写操作"))
@@ -301,7 +313,7 @@ class Ui_MainWindow(object):
         self.Sleep_PushButton.setText(_translate("MainWindow", "休眠"))
         self.label_8.setText(_translate("MainWindow", "电子钱包"))
         self.RechargeAccept_PushButton.setText(_translate("MainWindow", "确定"))
-        self.BalanceRequest_TextEdit.setText(_translate("MainWindow", "查询"))
+        self.BalanceRequest_PushButton.setText(_translate("MainWindow", "查询"))
         self.DeductionAccept_PushButton.setText(_translate("MainWindow", "确定"))
         self.label_9.setText(_translate("MainWindow", "充值"))
         self.label_10.setText(_translate("MainWindow", "扣费"))
